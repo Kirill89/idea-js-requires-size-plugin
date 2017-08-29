@@ -1,6 +1,6 @@
 <idea-plugin>
-    <id>com.JSCodeComplexity</id>
-    <name>JSCodeComplexity</name>
+    <id>com.ideaJsRequiresSizePlugin</id>
+    <name>JS requires size</name>
     <version>1.0</version>
 
     <idea-version since-build="145.0"/>
@@ -9,7 +9,7 @@
     <depends>JavaScript</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <postStartupActivity implementation="SampleStartupActivity"></postStartupActivity>
-        <annotator language="JavaScript" implementationClass="JSFunctionsAnnotator"/>
+        <postStartupActivity implementation="com.ideaJsRequiresSizePlugin.SampleStartupActivity"></postStartupActivity>
+        <annotator language="JavaScript" implementationClass="com.ideaJsRequiresSizePlugin.JSFunctionsAnnotator"/>
     </extensions>
 </idea-plugin>

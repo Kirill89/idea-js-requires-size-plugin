@@ -1,3 +1,5 @@
+package com.ideaJsRequiresSizePlugin
+
 import com.intellij.icons.AllIcons
 import com.intellij.lang.annotation.AnnotationHolder
 import com.intellij.lang.annotation.Annotator
@@ -16,7 +18,7 @@ class JSFunctionsAnnotator : Annotator {
             annotation.gutterIconRenderer = object : GutterIconRenderer() {
                 override fun equals(other: Any?) = false
                 override fun hashCode() = 0
-                override fun getIcon(): Icon = AllIcons.Xml.Browsers.Chrome16
+                override fun getIcon(): Icon = SizeIcon(sizeToString(2000), SizeIconSeverity.LOW)
             }
         }
     }

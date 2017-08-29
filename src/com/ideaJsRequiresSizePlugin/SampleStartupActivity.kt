@@ -1,3 +1,5 @@
+package com.ideaJsRequiresSizePlugin
+
 import com.intellij.openapi.application.ApplicationManager
 import com.intellij.openapi.fileEditor.FileEditorManager
 import com.intellij.openapi.fileEditor.FileEditorManagerEvent
