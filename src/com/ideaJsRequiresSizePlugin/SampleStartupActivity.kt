@@ -7,8 +7,6 @@ import com.intellij.openapi.fileEditor.FileEditorManagerListener
 import com.intellij.openapi.project.Project
 import com.intellij.openapi.startup.StartupActivity
 import com.intellij.openapi.vfs.VirtualFile
-import com.intellij.util.messages.MessageBus
-import com.intellij.util.messages.MessageBusConnection
 
 /**
  * This is our sample StartupActivity used to execute code on project open.

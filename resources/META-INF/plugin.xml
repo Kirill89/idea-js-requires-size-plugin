@@ -9,6 +9,7 @@
     <depends>JavaScript</depends>
 
     <extensions defaultExtensionNs="com.intellij">
+        <projectService serviceImplementation="com.ideaJsRequiresSizePlugin.PluginSettings"/>
         <postStartupActivity implementation="com.ideaJsRequiresSizePlugin.SampleStartupActivity"></postStartupActivity>
         <annotator language="JavaScript" implementationClass="com.ideaJsRequiresSizePlugin.JSFunctionsAnnotator"/>
     </extensions>
