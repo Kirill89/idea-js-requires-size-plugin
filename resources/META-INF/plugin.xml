@@ -12,5 +12,6 @@
         <projectService serviceImplementation="com.ideaJsRequiresSizePlugin.PluginSettings"/>
         <postStartupActivity implementation="com.ideaJsRequiresSizePlugin.SampleStartupActivity"></postStartupActivity>
         <annotator language="JavaScript" implementationClass="com.ideaJsRequiresSizePlugin.JSFunctionsAnnotator"/>
+        <projectConfigurable id="com.ideaJsRequiresSizePlugin" instance="com.ideaJsRequiresSizePlugin.Configuration"/>
     </extensions>
 </idea-plugin>
