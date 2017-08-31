@@ -34,6 +34,10 @@ class Configuration(project: Project) : Configurable {
             settings.maxFileSize = textField.text.toLong()
         } catch (e: NumberFormatException) {
         }
+
+        if (settings.maxFileSize <= 0) {
+            settings.maxFileSize = 1
+        }
     }
 
     override fun createComponent(): JComponent? {
