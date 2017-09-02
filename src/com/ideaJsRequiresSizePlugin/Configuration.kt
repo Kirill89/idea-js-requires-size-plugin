@@ -51,4 +51,10 @@ class Configuration(project: Project) : Configurable {
 
         return pane
     }
+
+    override fun reset() {
+        textField.text = settings.maxFileSize.toString()
+    }
+
+    override fun getHelpTopic(): String? = "JS requires size settings"
 }
